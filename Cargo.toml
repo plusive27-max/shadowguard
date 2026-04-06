@@ -1,0 +1,25 @@
+﻿[package]
+name = "shadowguard"
+version = "0.1.0"
+edition = "2021"
+description = "Local AI-Powered Credential & Secrets Guardian in Rust"
+authors = ["plusive27-max"]
+license = "MIT"
+repository = "https://github.com/plusive27-max/shadowguard"
+
+[[bin]]
+name = "shadowguard"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+walkdir = "2"
+colored = "2"
+indicatif = "0.18"
+regex = "1"
+lazy_static = "1"          # ← added
+ollama-rs = "0.2"
+anyhow = "1"
+thiserror = "2"
+chrono = { version = "0.4", features = ["serde"] }
