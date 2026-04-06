@@ -21,20 +21,24 @@ Scans your projects for hardcoded secrets, API keys, tokens, passwords, SSH keys
 ## 🚀 Quick Start
 
 1. Start Ollama:
+
     `` bash
    ollama run llama3.2
 
-2. Build & run:
-    ``bash
+3. Build & run:
+
+   ``bash
 cargo build --release
 .\target\release\shadowguard.exe --path "C:\Users\YourName\Projects" --output secrets-report.md
 
 Usage Examples
+   
     PowerShell
 # Scan a project
 shadowguard --path ".\my-project"
 
 # High-risk only
+
 shadowguard --path "D:\code" --high-risk-only
 Security & Legal
 Only scan code/repositories you own or have explicit permission to audit.
